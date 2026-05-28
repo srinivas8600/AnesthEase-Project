@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#921A40"
+    tools:context="com.simats.airwayanesthesia.anterior">
+
+    <!-- Inner container with D9ABAB background -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#D9ABAB"
+        android:padding="10dp">
+
+        <!-- First LinearLayout with TextView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#921A40">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Anterior column " />
+        </LinearLayout>
+
+        <!-- Second LinearLayout with CheckBoxes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Decreased volume"
+                android:layout_marginTop="10dp"
+                android:textSize="21dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <!-- CheckBox 1 -->
+            <CheckBox
+                android:id="@+id/cb11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp"
+                android:text="micrognathia" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Decreased compliance"
+                android:layout_marginTop="10dp"
+                android:textSize="21dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <!-- CheckBox 1 -->
+            <CheckBox
+                android:id="@+id/cb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp"
+                android:text="infection" />
+
+            <!-- CheckBox 2 -->
+            <CheckBox
+                android:id="@+id/cb2"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"
+                android:text="haemorrhage" />
+
+            <!-- CheckBox 3 -->
+            <CheckBox
+                android:id="@+id/cb4"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"
+                android:text="radiotherapy" />
+
+            <CheckBox
+                android:id="@+id/cb5"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"
+                android:text="Buck teeth (relative micrognathia)" />
+
+            <CheckBox
+                android:id="@+id/cb6"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"
+                android:text="Large tongue" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- Button at the bottom with a margin -->
+            <Button
+                android:id="@+id/bn12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Done"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:backgroundTint="#921A40"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Airway Anesthesia</string>
+    <string name="lbl_list_of_doctors" />
+    <string name="Todo">Todo</string>
+    <string name="OpenDrawer">Open navigation drawer</string>
+    <string name="CloseDrawer">Close navigation drawer</string>
+    <string name="password_visibility_toggle_description">Toggle Password Visibility</string>
+
+    <string-array name="gender">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+        <!-- Add more items as needed -->
+    </string-array>
+    <string-array name="spinner_date">
+        <item>Choose Date</item>
+    </string-array>
+</resources>

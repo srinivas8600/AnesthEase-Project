@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.simats.airwayanesthesia.clinicalParameters">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#921A40">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="Clinical parameters " />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Wrap content in CardView -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#D9ABAB"
+            app:cardCornerRadius="15dp">
+
+              <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ty1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="21dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Recent medical history"
+                    android:layout_gravity="center" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Previous history of any previous anesthesia issues including difficult intubation"
+                        android:textSize="18dp"/>
+
+                    <RadioGroup
+                        android:id="@+id/rg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10dp">
+
+                        <RadioButton
+                            android:id="@+id/yes1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes" />
+
+                        <RadioButton
+                            android:id="@+id/no1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Presence of obstructive sleep apena(History of snoring)"
+                        android:textSize="18dp"/>
+
+                    <RadioGroup
+                        android:id="@+id/rg2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10dp">
+
+                        <RadioButton
+                            android:id="@+id/yes2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes" />
+
+                        <RadioButton
+                            android:id="@+id/no2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#D9ABAB"
+            app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="21dp"
+                android:text="Weight"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- RadioGroup for weight options -->
+                <RadioGroup
+                    android:id="@+id/weight_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/lessThan90Kgs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Less than 90 kgs"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/r1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="90 to 110 kgs"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/greaterThan110Kgs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Greater than 110 kgs"
+                        android:textSize="18dp" />
+
+                </RadioGroup>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#D9ABAB"
+            app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="21dp"
+                android:text="Dental status"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Caps"
+                    android:textSize="18dp"/>
+
+                <RadioGroup
+                    android:id="@+id/radiogroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp">
+
+                    <RadioButton
+                        android:id="@+id/dyes1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/dno1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <!-- Repeat the above LinearLayouts for the remaining items -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Denture"
+                    android:textSize="18dp"/>
+
+                <RadioGroup
+                    android:id="@+id/radiogroup2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <RadioButton
+                        android:id="@+id/dyes2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/dno2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Loose teeth"
+                    android:textSize="18dp"/>
+
+                <RadioGroup
+                    android:id="@+id/radiogroup3"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp">
+
+                    <RadioButton
+                        android:id="@+id/dyes3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/dno3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:text="Missing/damaged/chipped teeth"
+                    android:textSize="18dp"/>
+
+                <RadioGroup
+                    android:id="@+id/radiogroup4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <RadioButton
+                        android:id="@+id/dyes4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/dno4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Buck teeth"
+                    android:textSize="18dp"/>
+
+                <RadioGroup
+                    android:id="@+id/radiogroup5"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/dyes5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/dno5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#D9ABAB"
+            app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:id="@+id/mmp_radio_group"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="21dp"
+                android:text="MMP(Mallampati grade)"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- RadioGroup for RadioButtons -->
+                <RadioGroup
+                    android:id="@+id/mrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+
+                    <!-- RadioButtons for options -->
+                    <RadioButton
+                        android:id="@+id/m1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Faucial pillar, soft palate of entire uvula visible"
+                        android:textSize="18dp"/>
+
+                    <RadioButton
+                        android:id="@+id/m2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Faucial pillar, soft palate is visible, uvula is masked by base of tongue"
+                        android:textSize="18dp"/>
+
+                    <RadioButton
+                        android:id="@+id/m3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Only soft palate is visible"
+                        android:textSize="18dp"/>
+
+                    <RadioButton
+                        android:id="@+id/m4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Soft palate is not visible"
+                        android:textSize="18dp"/>
+
+                    <!-- Additional RadioButtons can be added here -->
+                </RadioGroup>
+
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#D9ABAB"
+            app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="21dp"
+                android:text="Mouth opening/inter-incisor gap"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- RadioGroup for RadioButtons -->
+                <RadioGroup
+                    android:id="@+id/mirg"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- RadioButtons for options -->
+                    <RadioButton
+                        android:id="@+id/mo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="More than 3 finger wide"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/mo2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3 to 2 fingers wide"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/mo3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Less than 2 fingers wide"
+                        android:textSize="18dp" />
+
+                    <!-- Additional RadioButtons can be added here -->
+                </RadioGroup>
+
+
+                <!-- LinearLayout for scores -->
+
+            </RelativeLayout>
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#D9ABAB"
+            app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="21dp"
+                android:text="TMD(Thyro Mental Disease)"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- RadioGroup for RadioButtons -->
+                <RadioGroup
+                    android:id="@+id/tmdrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+
+                    <!-- RadioButtons for options -->
+                    <RadioButton
+                        android:id="@+id/t1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Distance from thyroid notch to chin >6.5cm"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/t2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Distance from thyroid notch to chin 6-6.5 cm"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/t3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Distance from thyroid notch to chin &lt;6cm"
+                        android:textSize="18dp" />
+
+                    <!-- Additional RadioButtons can be added here -->
+                </RadioGroup>
+
+
+                <!-- LinearLayout for scores -->
+
+            </RelativeLayout>
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#D9ABAB"
+            app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="21dp"
+                android:text="TMJ(Temporomodibilar joint mobility)"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+
+                android:textSize="21dp"
+                android:text="Upper lip bite test"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- RadioGroup for RadioButtons -->
+                <RadioGroup
+                    android:id="@+id/tmjrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+
+                    <!-- RadioButtons for options -->
+                    <RadioButton
+                        android:id="@+id/tj1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lower incisor bite above vermilion border of upper lip"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/tj2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lower incisor bite below vermilion border of upper lip"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/tj3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Unable to close upper lip"
+                        android:textSize="18dp" />
+
+                    <!-- Additional RadioButtons can be added here -->
+                </RadioGroup>
+
+                <!-- LinearLayout for scores -->
+
+
+            </RelativeLayout>
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#D9ABAB"
+            app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="21dp"
+                android:text="Neck mobility"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- RadioGroup for RadioButtons -->
+                <RadioGroup
+                    android:id="@+id/nmrg"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- RadioButtons for options -->
+                    <RadioButton
+                        android:id="@+id/n1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Normal"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/n2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mild Restriction"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/n3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Moderate Restriction"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/n4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Severe Restriction"
+                        android:textSize="18dp" />
+
+                    <!-- Additional RadioButtons can be added here -->
+                </RadioGroup>
+
+
+                <!-- LinearLayout for scores -->
+
+
+            </RelativeLayout>
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#D9ABAB"
+            app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="21dp"
+                android:text="Neck Circumference"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- RadioGroup for RadioButtons -->
+                <RadioGroup
+                    android:id="@+id/ncrg"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- RadioButtons for options -->
+                    <RadioButton
+                        android:id="@+id/nc1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="More than 43cm"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/nc2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Between 40cm-42cm"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/nc3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Less than 40cm"
+                        android:textSize="18dp" />
+
+                    <!-- Additional RadioButtons can be added here -->
+                </RadioGroup>
+
+                <!-- LinearLayout for scores -->
+
+            </RelativeLayout>
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#D9ABAB"
+            app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="21dp"
+                android:text="BMI(Body Mass Index)"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- RadioGroup for RadioButtons -->
+                <RadioGroup
+                    android:id="@+id/bmirg"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- RadioButtons for options -->
+                    <RadioButton
+                        android:id="@+id/bm1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Less than 18"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/bm2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Between 18 to 25 (18-25)"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/bm3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Between 25 to 30 (25-30)"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/bm4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Greater than 30 (>30)"
+                        android:textSize="18dp" />
+
+                    <!-- Additional RadioButtons can be added here -->
+                </RadioGroup>
+
+                <!-- LinearLayout for scores -->
+
+            </RelativeLayout>
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Next"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:backgroundTint="#921A40"
+                android:layout_marginBottom="70dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+
+

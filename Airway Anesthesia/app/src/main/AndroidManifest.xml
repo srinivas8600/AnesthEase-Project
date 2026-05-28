@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/app_icon_2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon_2_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LastApp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name="com.simats.airwayanesthesia.docdashboard"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="com.simats.airwayanesthesia.searchp"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="com.simats.airwayanesthesia.editpatient"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.pprofile"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.middle"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.posterior"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.anterior"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.secondarycurve"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.primarycurve"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.dmiddle"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.dposterior"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="com.simats.airwayanesthesia.danterior"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="com.simats.airwayanesthesia.ScoreActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name="com.simats.airwayanesthesia.why"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="com.simats.airwayanesthesia.clinicalParameters"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="com.simats.airwayanesthesia.addPatient"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="com.simats.airwayanesthesia.dProfileE"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.dProfile"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.Ed_doctor"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.dis_doctor"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.dSearch"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="com.simats.airwayanesthesia.AprofileE"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.Aprofile"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="com.simats.airwayanesthesia.adddoctor"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="com.simats.airwayanesthesia.admindashboard"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="com.simats.airwayanesthesia.weight"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.ultrasound"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="com.simats.airwayanesthesia.tmj"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.tmd"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.neckmobility"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.mouthopening"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.mmp"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.dentalstatus"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.admindoctorselectionpage"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.adminloginpage"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.doctorloginpage"
+            android:exported="true" />
+        <activity
+            android:name="com.simats.airwayanesthesia.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.simats.airwayanesthesia.recentmedicalhistory"
+            android:exported="true" />
+
+
+    </application>
+
+</manifest>

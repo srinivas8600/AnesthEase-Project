@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D9ABAB"
+    tools:context="com.simats.airwayanesthesia.AprofileE">
+
+    <!-- Top Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:background="#921A40">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROFILE"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"/>
+
+    <!-- Profile Image -->
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/apd"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update profile"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/black"/>
+
+    <!-- Form Layout -->
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <!-- Name Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Name       :"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"/>
+            <EditText
+                android:id="@+id/tx2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D9ABAB"
+                android:textColor="@android:color/black"
+                android:padding="5dp"
+                android:hint="Enter your name"/>
+        </LinearLayout>
+
+        <!-- Phone Number Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Ph.No      :"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"/>
+            <EditText
+                android:id="@+id/tx3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="10"
+                android:inputType="phone"
+                android:background="#D9ABAB"
+                android:textColor="@android:color/black"
+                android:padding="5dp"
+                android:hint="Enter your phone number"/>
+        </LinearLayout>
+
+        <!-- Gender Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Gender    :"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"/>
+            <EditText
+                android:id="@+id/tx4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D9ABAB"
+                android:textColor="@android:color/black"
+                android:padding="5dp"
+                android:hint="Enter your gender"/>
+        </LinearLayout>
+
+        <!-- Email Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="E-mail    :"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"/>
+            <EditText
+                android:id="@+id/tx5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:background="#D9ABAB"
+                android:textColor="@android:color/black"
+                android:padding="5dp"
+                android:hint="Enter your email"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Save Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Save"
+            android:textSize="19sp"
+            android:textColor="@android:color/black"
+            android:backgroundTint="#921A40"/>
+    </LinearLayout>
+
+</LinearLayout>

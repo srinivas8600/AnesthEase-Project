@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#5ED7E8"
+        android:orientation="horizontal"
+
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="117dp"
+            android:layout_marginBottom="21dp"
+            android:text="Clinical parameters"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginTop="90dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="TMD"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="(Thyro-mental diatance)"
+            android:textSize="20sp" />
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="vertical">
+
+
+        <RadioGroup
+            android:id="@+id/general9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+
+        <RadioButton
+            android:id="@+id/yesq11"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="11dp"
+            android:text="More than 4 fingers wide( greater 6.5cm)"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/yesq12"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="11dp"
+            android:text="4 to 3 fingers wide(6-6.5cm)"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/yesq13"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="11dp"
+            android:text="Less than 3 fingers wide(less than 6cm)"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_button"
+        android:text="Next"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        app:backgroundTint="#5ED7E8" />
+
+
+
+
+</RelativeLayout>
